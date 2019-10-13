@@ -1,0 +1,14 @@
+<h2>Employees - Add/Edit/Delete</h2>
+
+<ul class="employees">
+  <li>
+    <span class="badge">Emp ID</span> Employee Name</li>
+  <li *ngFor="let employee of employees">
+    <!-- <a routerLink="/update"> -->
+    <!-- <a routerLink="/update/{{employee.employeeCode}}"> -->
+    <a routerLink="/update/{{employee.id}}">
+      <span class="badge">{{employee.employeeCode}}</span> {{employee.name}}
+    </a>
+    <button class="delete" title="delete employee" (click)="delete(employee)">x</button>
+  </li>
+</ul>

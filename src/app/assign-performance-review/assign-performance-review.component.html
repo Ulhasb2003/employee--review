@@ -1,0 +1,11 @@
+<h2>Assign employees to participate in others performance review.</h2>
+<ul class="employees">
+  <li>
+    Employee Name</li>
+  <li *ngFor="let employee of employees">
+    <a routerLink="/update/{{employee.id}}">
+      {{employee.name}}
+    </a>
+    <button class="delete" title="delete employee" routerLink="/update/{{employee.id}}">Assign</button>
+  </li>
+</ul>

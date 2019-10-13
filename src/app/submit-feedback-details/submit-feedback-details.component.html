@@ -1,0 +1,14 @@
+<div *ngIf="employee">
+    <h2>Complete performance feedback of {{employee.name | uppercase}}</h2>
+    <div>
+      <span>Employee id: </span>{{employee.employeeCode}}</div>
+    <div>
+      <label>Feedback:
+        <textarea [(ngModel)]="employee.feedback" placeholder="Share feedback..." ></textarea>
+      </label>
+    </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+  </div>
+  <!-- { id: 11, name: 'Romin Irani', jobTitleName: 'Manager', employeeCode: 'E1', phoneNumber: "408-1234567", emailAddress: "romin.k.irani@gmail.com"
+  }, -->

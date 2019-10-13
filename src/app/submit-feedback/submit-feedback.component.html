@@ -1,0 +1,9 @@
+<h3>Submit performance review of following employees</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let employee of employees" class="col-1-4"
+      routerLink="/feedback/{{employee.id}}">
+    <div class="module ">
+      <h4>{{employee.name}}</h4>
+    </div>
+  </a>
+</div>
